@@ -3,14 +3,9 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Clarusway_Way to Reinvent Yourself"
-                sh 'echo second step'
-                sh 'echo another step'                
-                sh '''
-                echo 'Multiline'
-                echo 'Example'
-                '''
-                echo 'not using shell'
+                echo "first Clarusway_Way to Reinvent Yourself"
+                sh 'echo using shell within Jenkinsfile'
+                echo 'not using shell in the Jenkinsfile'
             }
         }
     }
